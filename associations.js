@@ -7,8 +7,11 @@ Project.hasMany(Task, {
     as: 'tasks',
   });
   
-  Task.belongsTo(Project, {
+Task.belongsTo(Project, {
     foreignKey: 'project_id',
     as: 'project',
-  });
+});
+
+
+
 
